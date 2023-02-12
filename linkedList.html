@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class Node {
+    constructor(value) {
+        this.value = value;
+        this.next = null;
+    }
+}
+
+class linkedlist{
+    constructor() {
+        this.head = null
+        this.size = 0;
+    }
+
+    isEmpty() { return this.size === 0 }
+    getHead() { return this.head; }
+    getSize() { return this.size; }
+
+    appendNode(value){
+        var newNode = new Node(value)
+
+
+        if (this.isEmpty()) {
+            this.head = newNode;
+        } else {
+            let currentNode = this.head;
+            while (currentNode.next != null) {
+                currentNode = currentNode.next;
+            }
+            currentNode.next = newNode;
+        }
+        this.size++;
+    }
+
+    printData() {
+        if (this.isEmpty()) {
+            console.log("list is empty");
+        } else {
+            let currentNode = this.head;
+            while (currentNode != null) {
+                console.log(currentNode.value);
+                currentNode = currentNode.next;
+            }
+        }
+    }
+
+}
+
+const studentID = new linkedlist();
+// console.log(studentID.getSize());
+
+studentID.appendNode(1);
+
+studentID.appendNode(2);
+
+studentID.appendNode(3);
+
+studentID.appendNode(4);
+
+studentID.appendNode(5);
+
+studentID.printData();
+
+//merge two links 
+// reverse the linked list
+// merge two sorted array  and then sort them
+// removing duplicates
+//
+</script>
+</html>
