@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fun()">Click Me for random QUotes</button>
+    <h1 class="qt"></h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ea. Corrupti soluta error doloribus dicta, laboriosam eos, quod, beatae illum est vero porro ex ea illo quaerat. Aliquid, aspernatur ab.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ea. Corrupti soluta error doloribus dicta, laboriosam eos, quod, beatae illum est vero porro ex ea illo quaerat. Aliquid, aspernatur ab.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ea. Corrupti soluta error doloribus dicta, laboriosam eos, quod, beatae illum est vero porro ex ea illo quaerat. Aliquid, aspernatur ab.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ea. Corrupti soluta error doloribus dicta, laboriosam eos, quod, beatae illum est vero porro ex ea illo quaerat. Aliquid, aspernatur ab.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ea. Corrupti soluta error doloribus dicta, laboriosam eos, quod, beatae illum est vero porro ex ea illo quaerat. Aliquid, aspernatur ab.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ea. Corrupti soluta error doloribus dicta, laboriosam eos, quod, beatae illum est vero porro ex ea illo quaerat. Aliquid, aspernatur ab.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ea. Corrupti soluta error doloribus dicta, laboriosam eos, quod, beatae illum est vero porro ex ea illo quaerat. Aliquid, aspernatur ab.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ea. Corrupti soluta error doloribus dicta, laboriosam eos, quod, beatae illum est vero porro ex ea illo quaerat. Aliquid, aspernatur ab.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ea. Corrupti soluta error doloribus dicta, laboriosam eos, quod, beatae illum est vero porro ex ea illo quaerat. Aliquid, aspernatur ab.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ea. Corrupti soluta error doloribus dicta, laboriosam eos, quod, beatae illum est vero porro ex ea illo quaerat. Aliquid, aspernatur ab.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ea. Corrupti soluta error doloribus dicta, laboriosam eos, quod, beatae illum est vero porro ex ea illo quaerat. Aliquid, aspernatur ab.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ea. Corrupti soluta error doloribus dicta, laboriosam eos, quod, beatae illum est vero porro ex ea illo quaerat. Aliquid, aspernatur ab.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ea. Corrupti soluta error doloribus dicta, laboriosam eos, quod, beatae illum est vero porro ex ea illo quaerat. Aliquid, aspernatur ab.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ea. Corrupti soluta error doloribus dicta, laboriosam eos, quod, beatae illum est vero porro ex ea illo quaerat. Aliquid, aspernatur ab.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ea. Corrupti soluta error doloribus dicta, laboriosam eos, quod, beatae illum est vero porro ex ea illo quaerat. Aliquid, aspernatur ab.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ea. Corrupti soluta error doloribus dicta, laboriosam eos, quod, beatae illum est vero porro ex ea illo quaerat. Aliquid, aspernatur ab.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ea. Corrupti soluta error doloribus dicta, laboriosam eos, quod, beatae illum est vero porro ex ea illo quaerat. Aliquid, aspernatur ab.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ea. Corrupti soluta error doloribus dicta, laboriosam eos, quod, beatae illum est vero porro ex ea illo quaerat. Aliquid, aspernatur ab.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ea. Corrupti soluta error doloribus dicta, laboriosam eos, quod, beatae illum est vero porro ex ea illo quaerat. Aliquid, aspernatur ab.</h1>
+</body>
+<script>
+    var arr=["Believe you can and you're halfway there." ,
+"Success is not final, failure is not fatal: it is the courage to continue that counts." ,
+"The best way to predict the future is to create it." ,
+"The only limit to our realization of tomorrow will be our doubts of today." ,
+"Don't watch the clock; do what it does. Keep going." ,
+"Success is not how high you have climbed, but how you make a positive difference to the world." ,
+"You miss 100% of the shots you don't take." ,
+"Your time is limited, don't waste it living someone else's life." ,
+"Life is 10% what happens to you and 90% how you react to it." ,
+"Hardships often prepare ordinary people for an extraordinary destiny."]
+var qt=document.querySelector(".qt")
+function fun(){
+    var pointer= Math.floor(Math.random() * 10) + 1;
+    console.log('pointer: ', pointer);
+    qt.innerHTML=arr[pointer]  
+}
+// document.addEventListener("contextmenu", function(event) {
+//     event.preventDefault();
+//   }, false);
+  document.addEventListener("mousedown", function(event) {
+    if (event.button === 0 || event.button === 2) {
+      event.preventDefault();
+    }
+  }, false);
+
+ </script>
+</html>
